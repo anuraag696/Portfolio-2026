@@ -183,7 +183,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const typewriterText = document.getElementById('typewriter');
   const taglines = [
     "Building Technology, Leading Communities.",
-    "Frontend Developer • IEEE Chairperson • AI Enthusiast",
+    "Aspiring Data Scientist • Loves Diving into AI",
+    "Full Stack Developer • IEEE Chairperson",
     "Code. Design. Lead."
   ];
   
@@ -278,7 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <p><strong>Discipline:</strong> B.Tech Computer Science & Engineering (2023 - 2027)</p>
       <p><strong>Academic Score:</strong> CGPA 7.59</p>
       <p><strong>Core Positions:</strong> Chairperson, IEEE Student Branch AUR</p>
-      <p><strong>Profile:</strong> An engineering student blending strategic community leadership with development expertise in React, cybersecurity tool construction, and generative AI interfaces.</p>
+      <p><strong>Profile:</strong> An aspiring Data Science student who loves diving into AI, blending strategic community leadership as the IEEE Student Branch Chairperson with full-stack development expertise.</p>
     `,
     skills: () => `
       <table class="terminal-table">
@@ -313,7 +314,6 @@ document.addEventListener('DOMContentLoaded', () => {
       <table class="terminal-table">
         <tr><td>Email</td><td>anuraaggupta2004@gmail.com</td></tr>
         <tr><td>Phone</td><td>+91-85294 85483</td></tr>
-        <tr><td>Netlify Web</td><td>anuraag-gupta-portfolio.netlify.app</td></tr>
         <tr><td>GitHub</td><td>github.com/anuraag696</td></tr>
         <tr><td>LinkedIn</td><td>linkedin.com/in/anuraag-gupta</td></tr>
       </table>
