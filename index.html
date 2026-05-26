@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Anuraag Gupta - B.Tech Computer Science Engineering student, IEEE Chairperson, Full Stack Developer, AI & Cyber Enthusiast, and Hackathon Organizer.">
+  <meta name="author" content="Anuraag Gupta">
+  <meta name="theme-color" content="#08080a">
+  <title>Anuraag Gupta | B.Tech CSE, IEEE Chairperson & Full Stack Developer</title>
+  
+  <!-- Preconnect to fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Google Fonts: Space Grotesk (tech/headings), Plus Jakarta Sans (body), Space Mono (code/terminal) -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Dynamic Canvas Background -->
+  <canvas id="canvas-bg"></canvas>
+
+  <!-- Custom Cinematic Pointer Cursor -->
+  <div class="custom-cursor-dot" id="cursor-dot"></div>
+  <div class="custom-cursor-outline" id="cursor-outline"></div>
+
+  <!-- Header & Navigation -->
+  <header class="nav-container">
+    <div class="nav-logo hover-target">
+      <span class="logo-accent">&lt;</span>
+      <span class="logo-name">Anuraag Gupta</span>
+      <span class="logo-accent">/&gt;</span>
+      <div class="status-indicator">
+        <span class="status-dot"></span>
+        <span class="status-text">Available</span>
+      </div>
+    </div>
+    
+    <nav class="nav-menu">
+      <a href="#hero" class="nav-link active hover-target">Home</a>
+      <a href="#terminal" class="nav-link hover-target">Terminal</a>
+      <a href="#experience" class="nav-link hover-target">Timeline</a>
+      <a href="#projects" class="nav-link hover-target">Projects</a>
+      <a href="#skills" class="nav-link hover-target">Skills</a>
+      <a href="#achievements" class="nav-link hover-target">Achievements</a>
+      <a href="#contact" class="nav-link hover-target">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <!-- Direct Netlify link of portfolio -->
+      <a href="https://anuraag-gupta-portfolio.netlify.app" target="_blank" class="btn btn-nav btn-glowing hover-target">
+        <span>Live Site</span>
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
+      <button class="mobile-nav-toggle hover-target" aria-label="Toggle navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Menu -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+    <nav class="mobile-nav-menu">
+      <a href="#hero" class="mobile-nav-link">Home</a>
+      <a href="#terminal" class="mobile-nav-link">Terminal</a>
+      <a href="#experience" class="mobile-nav-link">Timeline</a>
+      <a href="#projects" class="mobile-nav-link">Projects</a>
+      <a href="#skills" class="mobile-nav-link">Skills</a>
+      <a href="#achievements" class="mobile-nav-link">Achievements</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Main Content Wrapper -->
+  <main class="main-content">
+    
+    <!-- Hero Section -->
+    <section id="hero" class="section hero-section">
+      <div class="container hero-container">
+        
+        <div class="hero-tag-badge hover-target fade-in-element">
+          <i class="fa-solid fa-circle-nodes pulse-icon"></i>
+          <span>Building Technology • Leading Communities</span>
+        </div>
+
+        <h1 class="hero-title fade-in-element">
+          <span class="text-gradient">Anuraag Gupta</span>
+        </h1>
+        
+        <div class="hero-subtitle fade-in-element">
+          <span class="typewriter-container">
+            <span class="typewriter-text" id="typewriter"></span>
+            <span class="typewriter-cursor">|</span>
+          </span>
+        </div>
+
+        <p class="hero-description fade-in-element">
+          B.Tech Computer Science & Engineering student at <strong class="highlight-text hover-target">Amity University Rajasthan</strong>, graduating in 2027. Combining strategic leadership as <strong class="highlight-text hover-target">IEEE Student Branch Chairperson</strong> with expertise in Full Stack Development, Cybersecurity, and AI.
+        </p>
+
+        <!-- Floating IEEE Position Badge -->
+        <div class="floating-badge-container fade-in-element">
+          <div class="ieee-badge hover-target">
+            <div class="ieee-badge-glow"></div>
+            <div class="ieee-badge-content">
+              <i class="fa-solid fa-crown badge-icon"></i>
+              <div class="badge-text-group">
+                <span class="badge-title">IEEE Chairperson</span>
+                <span class="badge-sub">Amity University Rajasthan SB</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-cta fade-in-element">
+          <a href="#projects" class="btn btn-primary hover-target">
+            <span>Explore My Work</span>
+            <i class="fa-solid fa-chevron-right btn-icon"></i>
+          </a>
+          <a href="#terminal" class="btn btn-secondary hover-target">
+            <span>Launch Terminal</span>
+            <i class="fa-solid fa-terminal btn-icon"></i>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator-container">
+        <a href="#terminal" class="scroll-indicator hover-target" aria-label="Scroll down">
+          <span class="scroll-mouse">
+            <span class="scroll-wheel"></span>
+          </span>
+          <span class="scroll-text">SCROLL TO DISCOVER</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Terminal Section -->
+    <section id="terminal" class="section terminal-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&lt;intel_terminal&gt;</span>
+          <h2 class="section-title">Interactive Profile Console</h2>
+          <p class="section-desc">Type commands to probe my academic profile, cybersecurity tools, and leadership log.</p>
+        </div>
+
+        <div class="terminal-wrapper fade-in-element hover-target">
+          <!-- Terminal Header bar -->
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="terminal-title">anuraag@aur-server:~</div>
+            <div class="terminal-actions">
+              <i class="fa-solid fa-window-minimize"></i>
+              <i class="fa-solid fa-expand"></i>
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+
+          <!-- Terminal Screen -->
+          <div class="terminal-body" id="terminal-body">
+            <div class="terminal-line system-line">Initializing AnuraagOS v3.5.0-LTS...</div>
+            <div class="terminal-line system-line">Connection established to Amity University Rajasthan node.</div>
+            <div class="terminal-line welcome-line">
+              <pre class="terminal-ascii">
+   ___                                 ___            _        
+  / _ \ _ _  _  _ _ _ __ _ __ _ __ _  / __|_  _ _ __ | |_ __ _ 
+ / ___ \ ' \| || | '_/ _` / _` / _` | \__ \ || | '_ \|  _/ _` |
+/_/   \_\_|_|\_,_|_| \__,_\__,_\__, | |___/\_,_| .__/ \__\__,_|
+                               |___/          |_|             
+              </pre>
+            </div>
+            <div class="terminal-line hint-line">Welcome! Type <span class="cmd-highlight">help</span> to list all available system commands.</div>
+            
+            <div class="terminal-history" id="terminal-history">
+              <!-- Command outputs will be appended here -->
+            </div>
+
+            <!-- Terminal active line input -->
+            <div class="terminal-input-line">
+              <span class="terminal-prompt">anuraag@aur-server:~$</span>
+              <div class="input-wrapper">
+                <input type="text" id="terminal-input" placeholder="Type a command..." autocomplete="off" spellcheck="false">
+                <span class="input-cursor"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Leadership Section (Dual Timeline) -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&lt;journey_log&gt;</span>
+          <h2 class="section-title">Professional Journey</h2>
+          <p class="section-desc">A breakdown of my professional development and institutional leadership milestones.</p>
+        </div>
+
+        <!-- Toggle Switch -->
+        <div class="timeline-toggle-container fade-in-element">
+          <button class="timeline-toggle-btn active hover-target" id="toggle-experience" data-target="dev-timeline">
+            <i class="fa-solid fa-code btn-icon"></i>
+            <span>Developer Internships</span>
+          </button>
+          <button class="timeline-toggle-btn hover-target" id="toggle-leadership" data-target="lead-timeline">
+            <i class="fa-solid fa-users-gear btn-icon"></i>
+            <span>IEEE Leadership & Responsibilities</span>
+          </button>
+        </div>
+
+        <!-- Timelines Wrapper -->
+        <div class="timeline-wrapper-outer">
+          
+          <!-- DEV INTERNSHIPS TIMELINE -->
+          <div class="timeline-content active" id="dev-timeline">
+            <div class="timeline-main">
+              <div class="timeline-line-indicator"></div>
+              
+              <!-- Timeline Item 1 -->
+              <div class="timeline-item left-item fade-in-element">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card hover-target">
+                  <div class="card-glow"></div>
+                  <div class="timeline-card-header">
+                    <span class="timeline-date">June 2025 — August 2025</span>
+                    <h3 class="role-title">Front-End Developer Intern</h3>
+                    <span class="company-name">Codebucket Solutions Pvt. Ltd., Patna</span>
+                    <span class="work-mode"><i class="fa-solid fa-location-dot"></i> On-site</span>
+                  </div>
+                  <div class="timeline-card-body">
+                    <ul>
+                      <li>Architected a <strong class="highlight-text">React.js</strong> news aggregator with multi-category filtering, dynamic routing, and responsive layout.</li>
+                      <li>Integrated REST APIs via <strong class="highlight-text">Axios</strong> for real-time data fetching; implemented loading states and error boundaries.</li>
+                      <li>Crafted a reusable UI component library following React best practices; managed state using standard React Hooks.</li>
+                    </ul>
+                    <div class="timeline-tech-tags">
+                      <span class="tech-tag">React.js</span>
+                      <span class="tech-tag">REST APIs</span>
+                      <span class="tech-tag">Axios</span>
+                      <span class="tech-tag">JavaScript</span>
+                      <span class="tech-tag">CSS3</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Timeline Item 2 -->
+              <div class="timeline-item right-item fade-in-element">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card hover-target">
+                  <div class="card-glow"></div>
+                  <div class="timeline-card-header">
+                    <span class="timeline-date">April 2025 — May 2025</span>
+                    <h3 class="role-title">Cyber Security Intern</h3>
+                    <span class="company-name">Prodigy InfoTech</span>
+                    <span class="work-mode"><i class="fa-solid fa-wifi"></i> Remote</span>
+                  </div>
+                  <div class="timeline-card-body">
+                    <ul>
+                      <li>Engineered a <strong class="highlight-text">Python-based cybersecurity toolkit</strong> comprising 5 modules (password strength checker, port scanner, keylogger, file encryption, network scanner).</li>
+                      <li>Constructed a phishing awareness simulator that exposed 50+ users to mock social engineering scenarios.</li>
+                      <li>Coupled tools with network scanning frameworks to safely demonstrate live threat patterns.</li>
+                    </ul>
+                    <div class="timeline-tech-tags">
+                      <span class="tech-tag">Python</span>
+                      <span class="tech-tag">Network Security</span>
+                      <span class="tech-tag">Cryptography</span>
+                      <span class="tech-tag">Nmap</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- IEEE LEADERSHIP TIMELINE -->
+          <div class="timeline-content" id="lead-timeline">
+            <div class="timeline-main">
+              <div class="timeline-line-indicator"></div>
+              
+              <!-- Timeline Item 1 -->
+              <div class="timeline-item left-item fade-in-element">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card hover-target">
+                  <div class="card-glow"></div>
+                  <div class="timeline-card-header">
+                    <span class="timeline-date">Sept 2025 — Present</span>
+                    <h3 class="role-title">Chairperson</h3>
+                    <span class="company-name">IEEE Student Branch, Amity University Rajasthan</span>
+                    <span class="work-mode"><i class="fa-solid fa-crown"></i> Elected Executive Officer</span>
+                  </div>
+                  <div class="timeline-card-body">
+                    <ul>
+                      <li>Elected as chairperson of the student branch, serving as the highest student leadership position.</li>
+                      <li>Responsible for strategic direction, institutional representation, and overall branch governance for a community of 500+ members.</li>
+                      <li>Spearheaded <strong class="highlight-text">Whack Hackathon 4.0</strong>, managing end-to-end execution across technical, logistical, and sponsorship verticals.</li>
+                      <li>Represented the branch in inter-institutional IEEE activities to expand technical community engagement.</li>
+                    </ul>
+                    <div class="timeline-tech-tags">
+                      <span class="tech-tag">Leadership</span>
+                      <span class="tech-tag">Strategy</span>
+                      <span class="tech-tag">Event Organization</span>
+                      <span class="tech-tag">Public Relations</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Timeline Item 2 -->
+              <div class="timeline-item right-item fade-in-element">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card hover-target">
+                  <div class="card-glow"></div>
+                  <div class="timeline-card-header">
+                    <span class="timeline-date">Sep 2023 — Sep 2025</span>
+                    <h3 class="role-title">Head of Strategy & Operations</h3>
+                    <span class="company-name">IEEE Student Branch, Amity University Rajasthan</span>
+                    <span class="work-mode"><i class="fa-solid fa-users"></i> Department Head</span>
+                  </div>
+                  <div class="timeline-card-body">
+                    <ul>
+                      <li>Spearheaded operational planning for <strong class="highlight-text">Whack Hackathon 3.0</strong>, coordinating a team of 10+ members.</li>
+                      <li>Attracted 100+ active participants and successfully secured industry sponsorships.</li>
+                      <li>Streamlined event management workflows, eliminating logistical bottlenecks across branch events, workshops, and seminars.</li>
+                    </ul>
+                    <div class="timeline-tech-tags">
+                      <span class="tech-tag">Operations</span>
+                      <span class="tech-tag">Logistics</span>
+                      <span class="tech-tag">Team Coordination</span>
+                      <span class="tech-tag">Budgeting</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&lt;portfolio_gallery&gt;</span>
+          <h2 class="section-title">Selected Projects</h2>
+          <p class="section-desc">A selection of tools and applications built to solve problems or demonstrate concepts.</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="projects-filter fade-in-element">
+          <button class="filter-btn active hover-target" data-filter="all">All Projects</button>
+          <button class="filter-btn hover-target" data-filter="dev">Development & React</button>
+          <button class="filter-btn hover-target" data-filter="cyber">Security & Python</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          
+          <!-- Project 1 (IEEE AUR Website) -->
+          <div class="project-card fade-in-element hover-target" data-category="dev">
+            <div class="project-card-glow"></div>
+            <div class="project-card-header">
+              <div class="project-icon-box">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <div class="project-meta-links">
+                <a href="https://ieeeaur.com" target="_blank" class="project-link" aria-label="Visit Website">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <span class="project-tag-single">Featured Work</span>
+              <h3 class="project-title">IEEE Student Branch Official Website</h3>
+              <p class="project-description">
+                Designed and deployed the official multi-page React application for IEEE Student Branch, Amity University Rajasthan. Features event dynamic cards, workshop categorization, a testimonials carousel, a live stats panel, and mail-integrated forms.
+              </p>
+              <div class="project-stats">
+                <div class="stat-item">
+                  <span class="stat-num">500+</span>
+                  <span class="stat-lbl">Members Served</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-num">20+</span>
+                  <span class="stat-lbl">Events Logged</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <div class="project-tech-list">
+                <span>React.js</span>
+                <span>React Router</span>
+                <span>CSS3</span>
+                <span>Responsive</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 (React News App) -->
+          <div class="project-card fade-in-element hover-target" data-category="dev">
+            <div class="project-card-glow"></div>
+            <div class="project-card-header">
+              <div class="project-icon-box">
+                <i class="fa-regular fa-newspaper"></i>
+              </div>
+              <div class="project-meta-links">
+                <a href="https://github.com/anuraag696" target="_blank" class="project-link" aria-label="View Source on GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <span class="project-tag-single">Web Application</span>
+              <h3 class="project-title">React News Blogging Web App</h3>
+              <p class="project-description">
+                Architected a modern news aggregator and blogging application using React.js. Employs REST APIs with Axios for real-time news retrieval, multi-category layout filtering, error boundaries, state management, and optimized responsive layouts.
+              </p>
+            </div>
+            <div class="project-card-footer">
+              <div class="project-tech-list">
+                <span>React.js</span>
+                <span>REST APIs</span>
+                <span>React Router</span>
+                <span>Axios</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 (Cybersecurity Toolkit) -->
+          <div class="project-card fade-in-element hover-target" data-category="cyber">
+            <div class="project-card-glow"></div>
+            <div class="project-card-header">
+              <div class="project-icon-box">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <div class="project-meta-links">
+                <a href="https://github.com/anuraag696" target="_blank" class="project-link" aria-label="View Source on GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <span class="project-tag-single">Security Tool</span>
+              <h3 class="project-title">Personal Cybersecurity Toolkit</h3>
+              <p class="project-description">
+                A GUI-based Python toolkit featuring 5 critical modules: a password strength checker (entropy analyzer), an asynchronous port scanner, a keystroke log analyzer, a file encryption engine, and a network scanner leveraging Nmap integration.
+              </p>
+            </div>
+            <div class="project-card-footer">
+              <div class="project-tech-list">
+                <span>Python</span>
+                <span>Nmap API</span>
+                <span>Cryptography</span>
+                <span>Tkinter GUI</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&lt;tech_stack&gt;</span>
+          <h2 class="section-title">Technical Expertise</h2>
+          <p class="section-desc">Skills inventory classified by domain, graded based on course applications and projects.</p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Category 1 -->
+          <div class="skills-card fade-in-element hover-target">
+            <div class="skills-card-glow"></div>
+            <h3 class="skills-category-title">
+              <i class="fa-solid fa-code-branch category-icon"></i>
+              Languages
+            </h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">HTML5 / CSS3</span>
+                  <span class="skill-percent">Advanced</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="95%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-percent">Intermediate</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="75%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Python</span>
+                  <span class="skill-percent">Intermediate</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">C / C++</span>
+                  <span class="skill-percent">Intermediate</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="70%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Java</span>
+                  <span class="skill-percent">Basic</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="50%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="skills-card fade-in-element hover-target">
+            <div class="skills-card-glow"></div>
+            <h3 class="skills-category-title">
+              <i class="fa-solid fa-layer-group category-icon"></i>
+              Libraries & Frameworks
+            </h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">React.js</span>
+                  <span class="skill-percent">Intermediate</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">React Router</span>
+                  <span class="skill-percent">Intermediate</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="78%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Axios API Client</span>
+                  <span class="skill-percent">Intermediate</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Tkinter (GUI)</span>
+                  <span class="skill-percent">Intermediate</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="70%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="skills-card fade-in-element hover-target">
+            <div class="skills-card-glow"></div>
+            <h3 class="skills-category-title">
+              <i class="fa-solid fa-screwdriver-wrench category-icon"></i>
+              Tools & Platforms
+            </h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Git & GitHub</span>
+                  <span class="skill-percent">Experienced</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="88%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Linux (Ubuntu/Kali)</span>
+                  <span class="skill-percent">Intermediate</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="75%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Nmap Scanner</span>
+                  <span class="skill-percent">Intermediate</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="72%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Figma</span>
+                  <span class="skill-percent">Intermediate</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="68%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">AWS Services</span>
+                  <span class="skill-percent">Basic</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="45%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4 -->
+          <div class="skills-card fade-in-element hover-target">
+            <div class="skills-card-glow"></div>
+            <h3 class="skills-category-title">
+              <i class="fa-solid fa-brain category-icon"></i>
+              Core Concepts
+            </h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">REST API Integration</span>
+                  <span class="skill-percent">Proficient</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="88%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Component-Based Architecture</span>
+                  <span class="skill-percent">Proficient</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="82%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Responsive Web Design</span>
+                  <span class="skill-percent">Advanced</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Network Security Basics</span>
+                  <span class="skill-percent">Intermediate</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="75%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Database Systems (MySQL)</span>
+                  <span class="skill-percent">Intermediate</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="70%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements & Certifications Section -->
+    <section id="achievements" class="section achievements-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&lt;honors_activities&gt;</span>
+          <h2 class="section-title">Achievements & Co-Curriculars</h2>
+          <p class="section-desc">Key institutional, creative, and professional recognitions obtained.</p>
+        </div>
+
+        <div class="achievements-layout">
+          
+          <!-- Large Highlight: Odyssey Film Festival (Creative Personality) -->
+          <div class="achievement-featured fade-in-element hover-target">
+            <div class="featured-badge"><i class="fa-solid fa-star"></i> Featured Highlight</div>
+            <div class="featured-glow"></div>
+            <div class="featured-content">
+              <div class="featured-icon">
+                <i class="fa-solid fa-film"></i>
+              </div>
+              <div class="featured-text">
+                <span class="achievement-date">Film Festival 2025</span>
+                <h3 class="featured-title">Lead Actor in "Asli Pehchaan"</h3>
+                <p class="featured-desc">
+                  Showcased creative versatility by playing the lead role in the short film <strong class="highlight-text">"Asli Pehchaan"</strong> which won the coveted <strong class="highlight-text">Best Film Award</strong> at the Odyssey Film Festival 2025.
+                </p>
+                <div class="featured-tags">
+                  <span>Creative Arts</span>
+                  <span>Public Presentation</span>
+                  <span>Odyssey 2025</span>
+                  <span>Award Winner</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grid of other achievements -->
+          <div class="achievements-subgrid">
+            
+            <div class="achievement-small-card fade-in-element hover-target">
+              <div class="card-glow"></div>
+              <div class="small-card-icon">
+                <i class="fa-solid fa-landmark-flag"></i>
+              </div>
+              <div class="small-card-text">
+                <span class="achievement-date">BITS Pilani Delegate</span>
+                <h4 class="small-card-title">International Seminar for Digital Dreamscapes</h4>
+                <p class="small-card-desc">Selected as student delegate for the seminar organized by the Ministry of Youth Affairs at BITS Pilani.</p>
+              </div>
+            </div>
+
+            <div class="achievement-small-card fade-in-element hover-target">
+              <div class="card-glow"></div>
+              <div class="small-card-icon">
+                <i class="fa-solid fa-trophy"></i>
+              </div>
+              <div class="small-card-text">
+                <span class="achievement-date">Whack Hackathon 3.0</span>
+                <h4 class="small-card-title">Prize for Excellence</h4>
+                <p class="small-card-desc">Received Certificate of Appreciation and the Prize for Excellence for hackathon execution and design.</p>
+              </div>
+            </div>
+
+            <div class="achievement-small-card fade-in-element hover-target">
+              <div class="card-glow"></div>
+              <div class="small-card-icon">
+                <i class="fa-solid fa-handshake-angle"></i>
+              </div>
+              <div class="small-card-text">
+                <span class="achievement-date">NSS Member</span>
+                <h4 class="small-card-title">Active Social Volunteer</h4>
+                <p class="small-card-desc">Active contributor to Amity University Rajasthan NSS drives including blood donation camps and health awareness campaigns.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Certifications Horizontal Scrolling Bar/List -->
+        <div class="certifications-section">
+          <h3 class="certs-title"><i class="fa-solid fa-certificate"></i> Verified Industry Simulations & Certifications</h3>
+          <div class="certs-grid">
+            
+            <div class="cert-item hover-target">
+              <i class="fa-solid fa-microchip cert-icon"></i>
+              <div class="cert-info">
+                <span class="cert-name">Generative AI Core</span>
+                <span class="cert-issuer">Upflairs Pvt. Ltd. | April 2025</span>
+              </div>
+            </div>
+
+            <div class="cert-item hover-target">
+              <i class="fa-solid fa-bug cert-icon"></i>
+              <div class="cert-info">
+                <span class="cert-name">Cybersecurity Analyst</span>
+                <span class="cert-issuer">Tata Group (Forage) | April 2025</span>
+              </div>
+            </div>
+
+            <div class="cert-item hover-target">
+              <i class="fa-solid fa-database cert-icon"></i>
+              <div class="cert-info">
+                <span class="cert-name">GenAI Powered Data Analytics</span>
+                <span class="cert-issuer">Tata Group (Forage) | June 2025</span>
+              </div>
+            </div>
+
+            <div class="cert-item hover-target">
+              <i class="fa-solid fa-chart-line cert-icon"></i>
+              <div class="cert-info">
+                <span class="cert-name">Data Analytics & Cyber Security</span>
+                <span class="cert-issuer">Deloitte Australia (Forage) | June 2025</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&lt;establish_connection&gt;</span>
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-desc">Feel free to reach out for collaboration opportunities, technical initiatives, or IEEE events.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Info -->
+          <div class="contact-info-panel fade-in-element hover-target">
+            <div class="panel-glow"></div>
+            <h3 class="panel-title">Let's Build Something Together</h3>
+            <p class="panel-desc">I am always open to exploring new engineering horizons, community speaking engagements, and full-stack software development roles.</p>
+            
+            <div class="contact-methods">
+              
+              <a href="mailto:anuraaggupta2004@gmail.com" class="method-item hover-target">
+                <div class="method-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="method-details">
+                  <span class="method-lbl">Email Address</span>
+                  <span class="method-val">anuraaggupta2004@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="tel:+918529485483" class="method-item hover-target">
+                <div class="method-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="method-details">
+                  <span class="method-lbl">Phone Number</span>
+                  <span class="method-val">+91 85294 85483</span>
+                </div>
+              </a>
+
+              <div class="method-item hover-target">
+                <div class="method-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="method-details">
+                  <span class="method-lbl">Current Location</span>
+                  <span class="method-val">Jaipur, Rajasthan, India</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links-container">
+              <a href="https://github.com/anuraag696" target="_blank" class="social-link hover-target" aria-label="GitHub Profile">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://linkedin.com/in/anuraag-gupta" target="_blank" class="social-link hover-target" aria-label="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://anuraag-gupta-portfolio.netlify.app" target="_blank" class="social-link hover-target" aria-label="Existing Portfolio">
+                <i class="fa-solid fa-globe"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-panel fade-in-element hover-target">
+            <div class="panel-glow"></div>
+            <form id="contact-form" class="cyber-form" onsubmit="event.preventDefault(); alert('Message simulation submitted successfully! Anuraag will receive this.');">
+              
+              <div class="form-row-half">
+                <div class="form-group">
+                  <label for="form-name">Visitor Name</label>
+                  <div class="input-glow-wrapper">
+                    <input type="text" id="form-name" required placeholder="John Doe">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="form-email">Email Address</label>
+                  <div class="input-glow-wrapper">
+                    <input type="email" id="form-email" required placeholder="john@example.com">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject">Subject</label>
+                <div class="input-glow-wrapper">
+                  <input type="text" id="form-subject" required placeholder="Inquiry / IEEE Event Invitation">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message">Message Content</label>
+                <div class="input-glow-wrapper">
+                  <textarea id="form-message" required rows="5" placeholder="Write your message here..."></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit hover-target">
+                <span>Dispatch Message</span>
+                <i class="fa-solid fa-paper-plane btn-icon"></i>
+              </button>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="cyber-footer">
+    <div class="container footer-container">
+      <div class="footer-logo">
+        <span class="logo-accent">&lt;</span>
+        <span class="logo-name">Anuraag Gupta</span>
+        <span class="logo-accent">/&gt;</span>
+      </div>
+      <p class="footer-tagline">Building Technology • Leading Communities</p>
+      
+      <div class="footer-divider"></div>
+      
+      <div class="footer-bottom">
+        <p class="copyright-text">&copy; 2026 Anuraag Gupta. All rights reserved.</p>
+        <p class="tech-spec-text">Built with HTML5 • Vanilla CSS3 • Vanilla ES6 • Custom Canvas</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script linking -->
+  <script src="script.js"></script>
+</body>
+</html>
