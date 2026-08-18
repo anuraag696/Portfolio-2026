@@ -300,7 +300,10 @@ document.addEventListener('DOMContentLoaded', () => {
       <div style="margin-left: 12px; margin-bottom: 8px; color: var(--text-secondary);">- Production-grade FastAPI backend serving 200K+ products with O(1) fetch complexity keyset pagination. (Python, FastAPI, PostgreSQL, Redis)</div>
       
       <div style="margin-bottom: 8px;"><strong>3. India's Got Latent Streaming App</strong></div>
-      <div style="margin-left: 12px; color: var(--text-secondary);">- Android video streaming app using Kotlin and Jetpack Compose with custom Media3/ExoPlayer pipeline and Firestore dashboards.</div>
+      <div style="margin-left: 12px; margin-bottom: 8px; color: var(--text-secondary);">- Android video streaming app using Kotlin and Jetpack Compose with custom Media3/ExoPlayer pipeline and Firestore dashboards.</div>
+      
+      <div style="margin-bottom: 8px;"><strong>4. IEEE AUR Official Website</strong> — <a href="https://www.ieeeaur.com" target="_blank" style="color: var(--accent-cyan);">www.ieeeaur.com</a></div>
+      <div style="margin-left: 12px; color: var(--text-secondary);">- Built from scratch and shipped to production. Full multi-page React app serving 500+ IEEE members with dynamic events, workshops, and contact forms.</div>
     `,
     experience: () => `
       <div style="margin-bottom: 8px;"><strong>AI Developer & Workflow Automation Specialist</strong> @ Excellent Facets Pvt. Ltd.</div>
