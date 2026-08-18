@@ -182,10 +182,11 @@ document.addEventListener('DOMContentLoaded', () => {
      ========================================================================== */
   const typewriterText = document.getElementById('typewriter');
   const taglines = [
-    "Building Technology, Leading Communities.",
-    "Aspiring Data Scientist • Loves Diving into AI",
-    "Full Stack Developer • IEEE Chairperson",
-    "Code. Design. Lead."
+    "Software Development Engineer",
+    "Full-Stack & UI Component Systems Specialist",
+    "AI Developer & Workflow Automation Specialist",
+    "IEEE Student Branch Chairperson",
+    "Building Technology • Leading Communities"
   ];
   
   let currentWordIndex = 0;
@@ -267,7 +268,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <tr><td>about</td><td>Display summary of my academic background and profile</td></tr>
         <tr><td>skills</td><td>Display technical skillset grid</td></tr>
         <tr><td>projects</td><td>List highlight projects and source credentials</td></tr>
-        <tr><td>experience</td><td>Display professional internships details</td></tr>
+        <tr><td>experience</td><td>Display professional experience details</td></tr>
         <tr><td>film</td><td>Retrieve information on creative arts & acting credentials</td></tr>
         <tr><td>contact</td><td>Display communication nodes (Phone, Email, LinkedIn, etc.)</td></tr>
         <tr><td>clear</td><td>Clear the terminal display buffer</td></tr>
@@ -275,36 +276,41 @@ document.addEventListener('DOMContentLoaded', () => {
     `,
     about: () => `
       <p><strong>Name:</strong> Anuraag Gupta</p>
+      <p><strong>Title:</strong> Software Development Engineer</p>
       <p><strong>Affiliation:</strong> Amity University Rajasthan, Jaipur</p>
       <p><strong>Discipline:</strong> B.Tech Computer Science & Engineering (2023 - 2027)</p>
       <p><strong>Academic Score:</strong> CGPA 7.59</p>
       <p><strong>Core Positions:</strong> Chairperson, IEEE Student Branch AUR</p>
-      <p><strong>Profile:</strong> An aspiring Data Science student who loves diving into AI, blending strategic community leadership as the IEEE Student Branch Chairperson with full-stack development expertise.</p>
+      <p><strong>Profile:</strong> Software engineer with professional experience spanning reusable UI component systems, async backend APIs (FastAPI serving 200K+ records), and multi-agent AI workflows (LangGraph/LangChain).</p>
     `,
     skills: () => `
       <table class="terminal-table">
-        <tr><td>Languages</td><td>HTML5/CSS3 (Advanced), JavaScript (Intermediate), Python (Intermediate), C/C++ (Intermediate), Java (Basic)</td></tr>
-        <tr><td>Databases</td><td>MySQL (Intermediate)</td></tr>
-        <tr><td>Tools & Platforms</td><td>Git/GitHub, VS Code, AWS (Basic), Linux (Ubuntu/Kali), Nmap, Figma</td></tr>
-        <tr><td>Concepts</td><td>REST API Integration, Component Architecture, Responsive Web Design, Network Security Basics</td></tr>
+        <tr><td>Frontend & UI</td><td>React 19, TypeScript, HTML5 Canvas, Jetpack Compose, TailwindCSS, component systems</td></tr>
+        <tr><td>Backend & APIs</td><td>Python, FastAPI, Flask, asyncio, Node.js/Express, REST APIs, PostgreSQL, Redis, Supabase</td></tr>
+        <tr><td>CS Fundamentals</td><td>OOP (SOLID), Data Structures & Algorithms, DBMS, SQL</td></tr>
+        <tr><td>Tooling & Testing</td><td>Structured logging/error handling, API testing, Git, CI/CD, GCP, Render</td></tr>
+        <tr><td>AI/Automation</td><td>LangChain, LangGraph, RAG, FAISS vector search, Neo4j</td></tr>
       </table>
     `,
     projects: () => `
-      <div style="margin-bottom: 8px;"><strong>1. IEEE Student Branch Official Website</strong> (React.js, React Router, CSS3)</div>
-      <div style="margin-left: 12px; margin-bottom: 8px;">- Deployed website for 500+ member student branch (ieeeaur.com). Features dynamic events tagging, workshops catalog, testimonials, and contact hooks.</div>
+      <div style="margin-bottom: 8px;"><strong>1. SignSync – Real-Time YT-to-ASL Engine</strong></div>
+      <div style="margin-left: 12px; margin-bottom: 8px; color: var(--text-secondary);">- Synchronized YouTube ASL rendering engine on HTML5 Canvas. Cuts fingerspelling fallback by 85% with a 500+ word ASL dictionary. (React 19, TS, Canvas API, Express, Netlify)</div>
       
-      <div style="margin-bottom: 8px;"><strong>2. React News Blogging Web App</strong> (React.js, REST APIs, Router)</div>
-      <div style="margin-left: 12px; margin-bottom: 8px;">- News aggregator application utilizing Axios API loading, category-based rendering, and responsive viewports.</div>
+      <div style="margin-bottom: 8px;"><strong>2. Product Browsing API – Keyset Pagination</strong></div>
+      <div style="margin-left: 12px; margin-bottom: 8px; color: var(--text-secondary);">- Production-grade FastAPI backend serving 200K+ products with O(1) fetch complexity keyset pagination. (Python, FastAPI, PostgreSQL, Redis)</div>
       
-      <div style="margin-bottom: 8px;"><strong>3. Personal Cybersecurity Toolkit</strong> (Python)</div>
-      <div style="margin-left: 12px;">- A GUI tool carrying 5 cyber modules: Password strength auditor, port scanner, keylogger, file encryption engine, and network scanning utilities.</div>
+      <div style="margin-bottom: 8px;"><strong>3. India's Got Latent Streaming App</strong></div>
+      <div style="margin-left: 12px; color: var(--text-secondary);">- Android video streaming app using Kotlin and Jetpack Compose with custom Media3/ExoPlayer pipeline and Firestore dashboards.</div>
     `,
     experience: () => `
-      <div style="margin-bottom: 8px;"><strong>Front-End Developer Intern</strong> @ Codebucket Solutions Pvt. Ltd., Patna</div>
-      <div style="margin-left: 12px; margin-bottom: 12px; color: var(--text-secondary);">- June 2025 - August 2025 (On-site)<br>- Built a news aggregator layout, implemented API loaders, and customized a modular components library.</div>
+      <div style="margin-bottom: 8px;"><strong>AI Developer & Workflow Automation Specialist</strong> @ Excellent Facets Pvt. Ltd.</div>
+      <div style="margin-left: 12px; margin-bottom: 12px; color: var(--text-secondary);">- July 2026 - Present (On-site, Jaipur)<br>- Owns Python automation platform end-to-end; built async FastAPI APIs and LangGraph/LangChain multi-agent workflows.</div>
       
-      <div style="margin-bottom: 8px;"><strong>Cyber Security Intern</strong> @ Prodigy InfoTech</div>
-      <div style="margin-left: 12px; color: var(--text-secondary);">- April 2025 - May 2025 (Remote)<br>- Engineered Python toolkit security modules and built phishing awareness testing simulation tools.</div>
+      <div style="margin-bottom: 8px;"><strong>Software Development Intern</strong> @ Codebucket Solutions Pvt. Ltd.</div>
+      <div style="margin-left: 12px; margin-bottom: 12px; color: var(--text-secondary);">- June 2026 - July 2026 (On-site, Patna)<br>- Designed and built a production-scale Android app applying MVVM, SOLID, and Clean Architecture.</div>
+      
+      <div style="margin-bottom: 8px;"><strong>Front-End Developer Intern</strong> @ Codebucket Solutions Pvt. Ltd.</div>
+      <div style="margin-left: 12px; color: var(--text-secondary);">- June 2025 - August 2025 (On-site, Patna)<br>- Built a React news aggregator with 30% speedup; shipped reusable component library reducing duplication by 40%.</div>
     `,
     film: () => `
       <p style="color: #a5b4fc;"><i class="fa-solid fa-film"></i> <strong>Creative Highlight - Odyssey Film Festival 2025</strong></p>
