@@ -52,6 +52,12 @@
     </nav>
 
     <div class="nav-actions">
+      <a href="https://github.com/anuraag696" target="_blank" class="nav-social-icon hover-target" aria-label="GitHub Profile" style="color: var(--text-secondary); font-size: 1.15rem; margin-right: 12px; display: inline-flex; align-items: center; transition: color 0.2s ease;">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/anuraag-gupta-a4877527a" target="_blank" class="nav-social-icon hover-target" aria-label="LinkedIn Profile" style="color: var(--text-secondary); font-size: 1.15rem; margin-right: 16px; display: inline-flex; align-items: center; transition: color 0.2s ease;">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
       <a href="#contact" class="btn btn-nav btn-glowing hover-target">
         <span>Get in Touch</span>
         <i class="fa-solid fa-paper-plane"></i>
@@ -106,12 +112,20 @@
 
         <div class="hero-cta fade-in-element">
           <a href="#projects" class="btn btn-primary hover-target">
-            <span>Explore My Work</span>
+            <span>Explore Projects</span>
             <i class="fa-solid fa-chevron-right btn-icon"></i>
           </a>
+          <a href="https://github.com/anuraag696" target="_blank" class="btn btn-secondary hover-target" aria-label="GitHub Profile">
+            <i class="fa-brands fa-github btn-icon"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/anuraag-gupta-a4877527a" target="_blank" class="btn btn-secondary hover-target" aria-label="LinkedIn Profile">
+            <i class="fa-brands fa-linkedin-in btn-icon"></i>
+            <span>LinkedIn</span>
+          </a>
           <a href="#terminal" class="btn btn-secondary hover-target">
-            <span>Launch Terminal</span>
             <i class="fa-solid fa-terminal btn-icon"></i>
+            <span>Terminal</span>
           </a>
         </div>
       </div>
@@ -411,43 +425,46 @@
         <!-- Projects Grid -->
         <div class="projects-grid">
           
-          <!-- Project 1 (SignSync) -->
+          <!-- Project 1 (IEEE AUR Official Website) -->
           <div class="project-card fade-in-element hover-target" data-category="web">
             <div class="project-card-glow"></div>
             <div class="project-card-header">
               <div class="project-icon-box">
-                <i class="fa-solid fa-hands-asl-interpreting"></i>
+                <i class="fa-solid fa-globe"></i>
               </div>
               <div class="project-meta-links">
                 <a href="https://github.com/anuraag696" target="_blank" class="project-link" aria-label="View Source on GitHub">
                   <i class="fa-brands fa-github"></i>
                 </a>
+                <a href="https://ieeeaur.com" target="_blank" class="project-link" aria-label="Visit Live Website">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
               </div>
             </div>
             <div class="project-card-body">
-              <span class="project-tag-single">Accessibility & Canvas</span>
-              <h3 class="project-title">SignSync – Real-Time YT-to-ASL Engine</h3>
+              <span class="project-tag-single">Live Production Site</span>
+              <h3 class="project-title">IEEE AUR Official Website</h3>
               <p class="project-description">
-                Built a real-time accessibility web app that renders live YouTube captions as synchronized ASL animation via a custom forward-kinematics (FK) rendering engine on HTML5 Canvas.
+                Designed and built the official website of IEEE Student Branch AUR from scratch using <strong class="highlight-text">React, Vite, and TypeScript</strong>, serving as the central hub for events, hackathons, and a 500+ member community.
               </p>
               <div class="project-stats">
                 <div class="stat-item">
-                  <span class="stat-num">85%</span>
-                  <span class="stat-lbl">Fingerspelling Cut</span>
+                  <span class="stat-num">500+</span>
+                  <span class="stat-lbl">Members Served</span>
                 </div>
                 <div class="stat-item">
-                  <span class="stat-num">500+</span>
-                  <span class="stat-lbl">ASL Words Dict</span>
+                  <span class="stat-num"><a href="https://ieeeaur.com" target="_blank" style="color: var(--accent-cyan); text-decoration: none;">ieeeaur.com</a></span>
+                  <span class="stat-lbl">Live Production</span>
                 </div>
               </div>
             </div>
             <div class="project-card-footer">
               <div class="project-tech-list">
-                <span>React 19</span>
+                <span>React.js</span>
+                <span>Vite</span>
                 <span>TypeScript</span>
-                <span>Canvas API</span>
-                <span>Express</span>
-                <span>Netlify Functions</span>
+                <span>CSS3</span>
+                <span>Responsive</span>
               </div>
             </div>
           </div>
@@ -469,7 +486,7 @@
               <span class="project-tag-single">Backend & API Scale</span>
               <h3 class="project-title">Product Browsing API (Keyset Pagination)</h3>
               <p class="project-description">
-                Designed a production-grade FastAPI backend serving 200,000+ products using cursor/keyset pagination to keep fetch performance constant (O(1) complexity) at any depth, with tested structured logging.
+                Designed a production-grade FastAPI backend and database layer serving 200,000+ products using cursor/keyset pagination to keep fetch performance constant (O(1) complexity) at any depth, with tested structured logging and Postman test suites.
               </p>
               <div class="project-stats">
                 <div class="stat-item">
@@ -510,7 +527,7 @@
               <span class="project-tag-single">Android Streaming App</span>
               <h3 class="project-title">India's Got Latent Streaming</h3>
               <p class="project-description">
-                Independently building a production-scale Android video streaming app end-to-end using Kotlin, Jetpack Compose, MVVM, and Clean Architecture with custom ExoPlayer media playback pipeline.
+                Independently building a streaming app with component-driven UI, real-time Firestore backend, and REST payment verification using Kotlin, Jetpack Compose, MVVM, and Clean Architecture.
               </p>
               <div class="project-stats">
                 <div class="stat-item">
@@ -518,8 +535,8 @@
                   <span class="stat-lbl">Playback Pipeline</span>
                 </div>
                 <div class="stat-item">
-                  <span class="stat-num">3-Tier</span>
-                  <span class="stat-lbl">Monetization UPI</span>
+                  <span class="stat-num">In Dev</span>
+                  <span class="stat-lbl">Personal Project</span>
                 </div>
               </div>
             </div>
@@ -533,43 +550,44 @@
               </div>
             </div>
           </div>
-          <!-- Project 4 (IEEE AUR Website) -->
+
+          <!-- Project 4 (SignSync) -->
           <div class="project-card fade-in-element hover-target" data-category="web">
             <div class="project-card-glow"></div>
             <div class="project-card-header">
               <div class="project-icon-box">
-                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-hands-asl-interpreting"></i>
               </div>
               <div class="project-meta-links">
-                <a href="https://www.ieeeaur.com" target="_blank" class="project-link" aria-label="Visit Live Website">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <a href="https://github.com/anuraag696" target="_blank" class="project-link" aria-label="View Source on GitHub">
+                  <i class="fa-brands fa-github"></i>
                 </a>
               </div>
             </div>
             <div class="project-card-body">
-              <span class="project-tag-single">Live Production Site</span>
-              <h3 class="project-title">IEEE AUR Official Website</h3>
+              <span class="project-tag-single">Accessibility & Canvas</span>
+              <h3 class="project-title">SignSync – Real-Time YT-to-ASL Engine</h3>
               <p class="project-description">
-                Built from scratch and shipped to production — the official multi-page React application for IEEE Student Branch AUR. Features dynamic event cards, workshop catalog, a testimonials carousel, and mail-integrated contact forms.
+                Built a real-time accessibility web app rendering live YouTube captions as synchronized ASL animation via a custom forward-kinematics rendering engine on HTML5 Canvas, backed by a Node.js/Express REST API.
               </p>
               <div class="project-stats">
                 <div class="stat-item">
-                  <span class="stat-num">500+</span>
-                  <span class="stat-lbl">Members Served</span>
+                  <span class="stat-num">85%</span>
+                  <span class="stat-lbl">Fingerspelling Cut</span>
                 </div>
                 <div class="stat-item">
-                  <span class="stat-num">Live</span>
-                  <span class="stat-lbl">ieeeaur.com</span>
+                  <span class="stat-num">500+</span>
+                  <span class="stat-lbl">ASL Words Dict</span>
                 </div>
               </div>
             </div>
             <div class="project-card-footer">
               <div class="project-tech-list">
-                <span>React.js</span>
-                <span>Vite</span>
+                <span>React 19</span>
                 <span>TypeScript</span>
-                <span>CSS3</span>
-                <span>Responsive</span>
+                <span>Canvas API</span>
+                <span>Express</span>
+                <span>Netlify Functions</span>
               </div>
             </div>
           </div>

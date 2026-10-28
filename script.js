@@ -190,6 +190,12 @@ document.addEventListener('DOMContentLoaded', () => {
     "Building Technology • Leading Communities"
   ];
   
+  // Randomly shuffle taglines array every time the page is viewed/loaded
+  for (let i = taglines.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [taglines[i], taglines[j]] = [taglines[j], taglines[i]];
+  }
+  
   let currentWordIndex = 0;
   let currentCharIndex = 0;
   let isDeleting = false;
@@ -295,17 +301,17 @@ document.addEventListener('DOMContentLoaded', () => {
       </table>
     `,
     projects: () => `
-      <div style="margin-bottom: 8px;"><strong>1. SignSync – Real-Time YT-to-ASL Engine</strong></div>
-      <div style="margin-left: 12px; margin-bottom: 8px; color: var(--text-secondary);">- Synchronized YouTube ASL rendering engine on HTML5 Canvas. Cuts fingerspelling fallback by 85% with a 500+ word ASL dictionary. (React 19, TS, Canvas API, Express, Netlify)</div>
+      <div style="margin-bottom: 8px;"><strong>1. IEEE AUR Official Website</strong> — <a href="https://ieeeaur.com" target="_blank" style="color: var(--accent-cyan);">ieeeaur.com (Live Site)</a></div>
+      <div style="margin-left: 12px; margin-bottom: 8px; color: var(--text-secondary);">- Built from scratch and shipped to production. Full multi-page React, Vite & TypeScript app serving 500+ IEEE members with dynamic events, workshops, and contact forms.</div>
       
       <div style="margin-bottom: 8px;"><strong>2. Product Browsing API – Keyset Pagination</strong> — <a href="https://github.com/anuraag696/Full-Stack-Product-Browser" target="_blank" style="color: var(--accent-cyan);">GitHub Repo</a></div>
       <div style="margin-left: 12px; margin-bottom: 8px; color: var(--text-secondary);">- Production-grade FastAPI backend serving 200K+ products with O(1) fetch complexity keyset pagination. (Python, FastAPI, PostgreSQL, Redis)</div>
       
-      <div style="margin-bottom: 8px;"><strong>3. India's Got Latent Streaming App</strong></div>
+      <div style="margin-bottom: 8px;"><strong>3. India's Got Latent Streaming App</strong> — <a href="https://github.com/anuraag696" target="_blank" style="color: var(--accent-cyan);">GitHub (In Development)</a></div>
       <div style="margin-left: 12px; margin-bottom: 8px; color: var(--text-secondary);">- Android video streaming app using Kotlin and Jetpack Compose with custom Media3/ExoPlayer pipeline and Firestore dashboards.</div>
       
-      <div style="margin-bottom: 8px;"><strong>4. IEEE AUR Official Website</strong> — <a href="https://www.ieeeaur.com" target="_blank" style="color: var(--accent-cyan);">www.ieeeaur.com</a></div>
-      <div style="margin-left: 12px; color: var(--text-secondary);">- Built from scratch and shipped to production. Full multi-page React app serving 500+ IEEE members with dynamic events, workshops, and contact forms.</div>
+      <div style="margin-bottom: 8px;"><strong>4. SignSync – Real-Time YT-to-ASL Engine</strong> — <a href="https://github.com/anuraag696" target="_blank" style="color: var(--accent-cyan);">GitHub Repo</a></div>
+      <div style="margin-left: 12px; color: var(--text-secondary);">- Synchronized YouTube ASL rendering engine on HTML5 Canvas. Cuts fingerspelling fallback by 85% with a 500+ word ASL dictionary. (React 19, TS, Canvas API, Express, Netlify)</div>
     `,
     experience: () => `
       <div style="margin-bottom: 8px;"><strong>AI Developer & Workflow Automation Specialist</strong> @ Excellent Facets Pvt. Ltd.</div>
