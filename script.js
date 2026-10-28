@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
      ========================================================================== */
   const typewriterText = document.getElementById('typewriter');
   const taglines = [
-    "Software Development Intern",
+    "Software Development Engineer",
     "Full Stack Web & Mobile Developer",
     "Python, React & Cybersecurity Specialist",
     "AI Developer & Workflow Automation Specialist",
@@ -270,6 +270,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <tr><td>skills</td><td>Display technical skillset grid</td></tr>
         <tr><td>projects</td><td>List highlight projects and source credentials</td></tr>
         <tr><td>experience</td><td>Display professional experience details</td></tr>
+        <tr><td>education</td><td>Display academic background & scores</td></tr>
         <tr><td>film</td><td>Retrieve information on creative arts & acting credentials</td></tr>
         <tr><td>contact</td><td>Display communication nodes (Phone, Email, LinkedIn, etc.)</td></tr>
         <tr><td>clear</td><td>Clear the terminal display buffer</td></tr>
@@ -297,7 +298,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <div style="margin-bottom: 8px;"><strong>1. SignSync – Real-Time YT-to-ASL Engine</strong></div>
       <div style="margin-left: 12px; margin-bottom: 8px; color: var(--text-secondary);">- Synchronized YouTube ASL rendering engine on HTML5 Canvas. Cuts fingerspelling fallback by 85% with a 500+ word ASL dictionary. (React 19, TS, Canvas API, Express, Netlify)</div>
       
-      <div style="margin-bottom: 8px;"><strong>2. Product Browsing API – Keyset Pagination</strong></div>
+      <div style="margin-bottom: 8px;"><strong>2. Product Browsing API – Keyset Pagination</strong> — <a href="https://github.com/anuraag696/Full-Stack-Product-Browser" target="_blank" style="color: var(--accent-cyan);">GitHub Repo</a></div>
       <div style="margin-left: 12px; margin-bottom: 8px; color: var(--text-secondary);">- Production-grade FastAPI backend serving 200K+ products with O(1) fetch complexity keyset pagination. (Python, FastAPI, PostgreSQL, Redis)</div>
       
       <div style="margin-bottom: 8px;"><strong>3. India's Got Latent Streaming App</strong></div>
@@ -319,6 +320,16 @@ document.addEventListener('DOMContentLoaded', () => {
       <div style="margin-bottom: 8px;"><strong>Cybersecurity & Python Intern</strong> @ Prodigy InfoTech</div>
       <div style="margin-left: 12px; color: var(--text-secondary);">- 2025 (Remote)<br>- Applied cybersecurity and Python tasks covering security fundamentals, scripting, and safe troubleshooting.</div>
     `,
+    education: () => `
+      <div style="margin-bottom: 8px;"><strong>B.Tech in Computer Science & Engineering (2023 – 2027)</strong></div>
+      <div style="margin-left: 12px; margin-bottom: 10px; color: var(--text-secondary);">- Amity University Rajasthan, Jaipur &bull; CGPA: 7.59</div>
+      
+      <div style="margin-bottom: 8px;"><strong>CBSE Class XII (2022)</strong></div>
+      <div style="margin-left: 12px; margin-bottom: 10px; color: var(--text-secondary);">- DAV Public School, BSEB, Patna &bull; 86%</div>
+      
+      <div style="margin-bottom: 8px;"><strong>CBSE Class X (2020)</strong></div>
+      <div style="margin-left: 12px; color: var(--text-secondary);">- DAV Public School, BSEB, Patna &bull; 94.8%</div>
+    `,
     film: () => `
       <p style="color: #a5b4fc;"><i class="fa-solid fa-film"></i> <strong>Creative Highlight - Odyssey Film Festival 2025</strong></p>
       <p style="margin-left: 12px;">Played the lead acting role in the short film <strong>"Asli Pehchaan"</strong> which won the <strong>Best Film Award</strong> at the Odyssey Film Festival 2025. Showcases creative adaptability, public presentation strength, and dynamic communication skills beyond tech frameworks.</p>
@@ -328,7 +339,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <tr><td>Email</td><td>anuraaggupta2004@gmail.com</td></tr>
         <tr><td>Phone</td><td>+91-85294 85483</td></tr>
         <tr><td>GitHub</td><td>github.com/anuraag696</td></tr>
-        <tr><td>LinkedIn</td><td>linkedin.com/in/anuraag-gupta</td></tr>
+        <tr><td>LinkedIn</td><td>linkedin.com/in/anuraag-gupta-a4877527a</td></tr>
       </table>
     `
   };
